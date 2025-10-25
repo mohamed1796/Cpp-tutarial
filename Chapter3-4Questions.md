@@ -255,15 +255,18 @@ if (x < 0 || x > 100)
 ### 7. Input Validation
 
 **Q14.**
-Keep asking the user to enter a positive number.
+Asking the user to enter a positive number, and validate the number.
 
 **Solution**
 
 ```cpp
-do {
-    cout << "Enter a positive number: ";
-    cin >> num;
-} while (num <= 0);
+cout << "Enter a positive number: ";
+cin >> num;
+if(num < 0){
+    cout << "Invalid number!";
+}else {
+    cout << "valid number!";
+}
 ```
 
 ---
