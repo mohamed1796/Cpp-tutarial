@@ -26,6 +26,11 @@ int findMin(int a, int b) {
     return (a < b) ? a : b;
 }
 double findMin(double a, double b) {
+    // if( a < b ) {
+    //     return a;
+    // }else {
+    //     return b; 
+    // }
     return (a < b) ? a : b;
 }
 int findMin(int a, int b, int c) {
