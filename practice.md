@@ -54,7 +54,8 @@ double compoundInterest(double principal, double rate = 5.0, int time = 2) {
 // 5. Function using static variable to count vowels across multiple calls
 int countVowels(const string &text) {
     static int totalVowels = 0;  // persists across calls
-    for (char ch : text) {
+    for(int i = 0; i<text.length();i++){
+        char ch = text[i];
         ch = tolower(ch);
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
             totalVowels++;
