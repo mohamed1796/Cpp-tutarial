@@ -1,17 +1,11 @@
-1. Modular Programming - Breaking code into functions
-2. Function Definitions - Creating reusable code blocks
-3. Function Prototypes - Forward declarations
-4. Passing Data by Value - Copies of arguments
-5. Return Statements - Sending values back
-6. Boolean Returns - True/false logic
-7. Local Variables - Function-scope variables
-8. Global Variables & Constants - Program-scope
-9. Static Local Variables - Persistent values
-10. Default Arguments - Optional parameters
-11. Reference Parameters - Pass by reference
-12. Function Overloading - Same name, different signatures
-13. Menu-Driven Programs - User interaction
-14. The exit() Function - Program termination
+1. Write a function to check if a year is a leap year
+2. Create an overloaded function to find minimum values
+3. Write a function using reference parameters to find quotient and remainder
+4. Create a function with default arguments for calculating compound interest 
+5. Implement a menu-driven program using functions 
+6. Write a function that uses static variables to count vowels across multiple calls 
+7. Create overloaded functions to calculate volume of different shapes 
+8. Write functions to validate user input with boolean returns
 ---
 
 ### ✅ **Full Solution**
