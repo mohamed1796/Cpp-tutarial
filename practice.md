@@ -2,10 +2,10 @@
 2. Create an overloaded function to find minimum values
 3. Write a function using reference parameters to find quotient and remainder
 4. Create a function with default arguments for calculating compound interest 
-5. Implement a menu-driven program using functions 
-6. Write a function that uses static variables to count vowels across multiple calls 
-7. Create overloaded functions to calculate volume of different shapes 
-8. Write functions to validate user input with boolean returns
+5. Write a function that uses static variables to count vowels across multiple calls 
+6. Create overloaded functions to calculate volume of different shapes 
+7. Write functions to validate user input with boolean returns
+8. Implement a menu-driven program using functions 
 ---
 
 ### ✅ **Full Solution**
@@ -44,20 +44,9 @@ double compoundInterest(double principal, double rate = 5.0, int time = 2) {
     return principal * pow((1 + rate / 100), time) - principal;
 }
 
-// 5. Menu-driven program using functions
-void showMenu() {
-    cout << "\nMenu:\n";
-    cout << "1. Check Leap Year\n";
-    cout << "2. Find Minimum\n";
-    cout << "3. Divide Two Numbers\n";
-    cout << "4. Calculate Compound Interest\n";
-    cout << "5. Count Vowels in String\n";
-    cout << "6. Calculate Volume\n";
-    cout << "7. Validate Input\n";
-    cout << "8. Exit\n";
-}
 
-// 6. Function using static variable to count vowels across multiple calls
+
+// 5. Function using static variable to count vowels across multiple calls
 int countVowels(const string &text) {
     static int totalVowels = 0;  // persists across calls
     for (char ch : text) {
@@ -68,7 +57,7 @@ int countVowels(const string &text) {
     return totalVowels;
 }
 
-// 7. Overloaded functions to calculate volume of different shapes
+// 6. Overloaded functions to calculate volume of different shapes
 double volume(double radius) {  // Sphere
     return (4.0 / 3.0) * M_PI * pow(radius, 3);
 }
@@ -79,12 +68,25 @@ double volume(double length, double width, double height) {  // Box
     return length * width * height;
 }
 
-// 8. Functions to validate user input with boolean returns
+// 7. Functions to validate user input with boolean returns
 bool isValidPositive(int n) {
     return n > 0;
 }
 bool isValidRange(int n, int minVal, int maxVal) {
     return n >= minVal && n <= maxVal;
+}
+
+// 8. Menu-driven program using functions
+void showMenu() {
+    cout << "\nMenu:\n";
+    cout << "1. Check Leap Year\n";
+    cout << "2. Find Minimum\n";
+    cout << "3. Divide Two Numbers\n";
+    cout << "4. Calculate Compound Interest\n";
+    cout << "5. Count Vowels in String\n";
+    cout << "6. Calculate Volume\n";
+    cout << "7. Validate Input\n";
+    cout << "8. Exit\n";
 }
 
 int main() {
