@@ -212,11 +212,13 @@ Write 5 numbers to a file and read them back.
 using namespace std;
 
 int main() {
-    ofstream outFile("data.txt");
+    ofstream outFile;
+    outFile.open("data.txt");
     for (int i = 1; i <= 5; i++) outFile << i << " ";
     outFile.close();
 
-    ifstream inFile("data.txt");
+    ifstream inFile;
+    inFile.open("data.txt");
     int num, sum = 0;
     while (inFile >> num)
         sum += num;
