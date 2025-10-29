@@ -284,7 +284,8 @@ int main() {
         double avg = static_cast<double>(total) / count;
         cout << "Average = " << avg << endl;
 
-        ofstream outFile("report.txt");
+        ofstream outFile;
+        outFile.open("report.txt");
         outFile << "Scores entered: " << count << endl;
         outFile << "Average score: " << avg << endl;
         outFile.close();
